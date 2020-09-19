@@ -23,7 +23,7 @@ function importFilteredChecklistPrev() {
   spreadsheet.getCurrentCell().setFormula(
     'QUERY(IMPORTRANGE(VLOOKUP("idChecklist",\'Configuración\'!C8:D,2,0),VLOOKUP("rangoCheklist",\'Configuración\'!C8:D,2,0)), \n'+
     '" select * \n' +
-    '   where Col1 contains \'"&\'Información\'!D33&"\' \n' +
+    '   where Col1 contains \'"&\'Información\'!D34&"\' \n' +
     '     and not Col3 contains \'5. POST PRODUCCIÓN\' \n' +
     '     and ( \n' +
                qryValues +
@@ -48,7 +48,7 @@ function importFilteredChecklistPost() {
   spreadsheet.getCurrentCell().setFormula(
     'QUERY(IMPORTRANGE(VLOOKUP("idChecklist",\'Configuración\'!C8:D,2,0),VLOOKUP("rangoCheklist",\'Configuración\'!C8:D,2,0)), \n'+
     '" select * \n' +
-    '   where Col1 contains \'"&\'Información\'!D33&"\' \n' +
+    '   where Col1 contains \'"&\'Información\'!D34&"\' \n' +
     '     and Col3 contains \'5. POST PRODUCCIÓN\' \n' +
     '     and ( \n' +
                qryValues +
