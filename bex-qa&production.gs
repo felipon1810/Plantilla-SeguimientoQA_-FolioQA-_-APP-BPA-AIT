@@ -28,7 +28,7 @@ function importFilteredChecklistPrev(isBEx, filters) {
     'QUERY(IMPORTRANGE(VLOOKUP("idChecklist",\'Configuración\'!C8:D,2,0),VLOOKUP("rangoCheklist",\'Configuración\'!C8:D,2,0)), \n'+
     '" select Col1, Col2, Col3, Col4, Col5, Col6, Col7, Col8, Col9, Col10, Col11 \n' +
     '   where Col1 contains \'"&\'Información\'!D34&"\' \n' +
-    (isBEx ? '     and not Col13 contains true \n' : '') + 
+    (isBEx ? '     and Col13 contains true \n' : '') + 
     '     and not Col3 contains \'5. POST PRODUCCIÓN\' \n' +
     '     and ( \n' +
                qryValues +
@@ -53,7 +53,7 @@ function importFilteredChecklistPost(isBEx, filters) {
     'QUERY(IMPORTRANGE(VLOOKUP("idChecklist",\'Configuración\'!C8:D,2,0),VLOOKUP("rangoCheklist",\'Configuración\'!C8:D,2,0)), \n'+
     '" select Col1, Col2, Col3, Col4, Col5, Col6, Col7, Col8, Col9, Col10, Col11 \n' +
     '   where Col1 contains \'"&\'Información\'!D34&"\' \n' +
-    (isBEx ? '     and not Col13 contains true \n' : '') + 
+    (isBEx ? '     and Col13 contains true \n' : '') + 
     '     and Col3 contains \'5. POST PRODUCCIÓN\' \n' +
     '     and ( \n' +
                qryValues +
