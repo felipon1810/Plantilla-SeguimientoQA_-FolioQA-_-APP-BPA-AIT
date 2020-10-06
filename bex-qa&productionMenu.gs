@@ -1,8 +1,10 @@
 function onOpen(e) {
   SpreadsheetApp.getUi()
      .createMenu('BEx QA & Production')
-     .addItem('1. Import Filtered Cheklist', 'importFilteredChecklist')
-     .addItem('2. Close Cheklist', 'closeChecklist')
+     .addItem('Import Filtered Cheklist V1', 'importFilteredChecklist')
+     .addItem('Import Filtered Cheklist V2', 'importFilteredChecklistV2')
+     .addSeparator()
+     .addItem('Close Cheklist', 'closeChecklist')
      .addToUi();
   SpreadsheetApp.getActiveSpreadsheet().toast('Menú de BEx QA & Production en ejecución', 'AVISO', 5);
 }
