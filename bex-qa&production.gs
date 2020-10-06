@@ -143,50 +143,53 @@ function getComponentsFilters() {
   var qryValues = '             Col16 = TRUE \n'; // DEFAULT
   if (filters!=null && filters.length>0) {
     for (var i=0;i<filters.length;i++) {
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='AMELIA') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='AMELIA (Flujos)') {
         qryValues+= '          OR Col17 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='APX (Batch)') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='AMELIA (Entrenamiento)') {
         qryValues+= '          OR Col18 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='APX (Online)') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='APX (Batch)') {
         qryValues+= '          OR Col19 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='ASO (Consumo)') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='APX (Online)') {
         qryValues+= '          OR Col20 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='ASO (Create)') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='ASO (Consumo)') {
         qryValues+= '          OR Col21 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='BACKEND') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='ASO (Create)') {
         qryValues+= '          OR Col22 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='CONTROL-M') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='BACKEND') {
         qryValues+= '          OR Col23 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='DB-QUERYS') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='CONTROL-M') {
         qryValues+= '          OR Col24 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='DB-MODEL') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='DB-QUERYS') {
         qryValues+= '          OR Col25 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='FRONTEND') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='DB-MODEL') {
         qryValues+= '          OR Col26 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='HOST') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='FRONTEND') {
         qryValues+= '          OR Col27 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='ROBOTICS') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='HOST') {
         qryValues+= '          OR Col28 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='WM-BPM (Modelado)') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='ROBOTICS') {
         qryValues+= '          OR Col29 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='WM-IS (Servicios)') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='WM-BPM (Modelado)') {
         qryValues+= '          OR Col30 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='WM-MWS (Conf)') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='WM-IS (Servicios)') {
         qryValues+= '          OR Col31 = TRUE \n';
+      }
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='WM-MWS (Conf)') {
+        qryValues+= '          OR Col32 = TRUE \n';
       }      
     }
   }
