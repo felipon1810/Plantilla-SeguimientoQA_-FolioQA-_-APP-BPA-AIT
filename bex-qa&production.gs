@@ -121,7 +121,7 @@ function isBuldingBlockBEx() {
   var filter = sheet.getRange("D23:F23").getValue();
   Logger.log('Valor de buldingBlock: ' + filter);
   if (filter!=null && filter.length>0) {
-      if (filter.replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='BEx')
+      if (filter.replace(/^\s+|\s+$|\s+(?=\s)/g, "").toUpperCase()=='BEX')
         return true;
   }
   return false;
@@ -143,52 +143,52 @@ function getComponentsFilters() {
   var qryValues = '             Col16 = TRUE \n'; // DEFAULT
   if (filters!=null && filters.length>0) {
     for (var i=0;i<filters.length;i++) {
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='AMELIA (Flujos)') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "").toUpperCase()=='AMELIA_FLUJOS') {
         qryValues+= '          OR Col17 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='AMELIA (Entrenamiento)') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "").toUpperCase()=='AMELIA_ENTRENAMIENTO') {
         qryValues+= '          OR Col18 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='APX (Batch)') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "").toUpperCase()=='APX_BATCH') {
         qryValues+= '          OR Col19 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='APX (Online)') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "").toUpperCase()=='APX_ONLINE') {
         qryValues+= '          OR Col20 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='ASO (Consumo)') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "").toUpperCase()=='ASO_CONSUMO') {
         qryValues+= '          OR Col21 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='ASO (Create)') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "").toUpperCase()=='ASO_CREATE') {
         qryValues+= '          OR Col22 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='BACKEND') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "").toUpperCase()=='BACKEND') {
         qryValues+= '          OR Col23 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='CONTROL-M') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "").toUpperCase()=='CONTROL-M') {
         qryValues+= '          OR Col24 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='DB-QUERYS') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "").toUpperCase()=='DB-QUERYS') {
         qryValues+= '          OR Col25 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='DB-MODEL') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "").toUpperCase()=='DB-MODEL') {
         qryValues+= '          OR Col26 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='FRONTEND') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "").toUpperCase()=='FRONTEND') {
         qryValues+= '          OR Col27 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='HOST') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "").toUpperCase()=='HOST') {
         qryValues+= '          OR Col28 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='ROBOTICS') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "").toUpperCase()=='ROBOTICS') {
         qryValues+= '          OR Col29 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='WM-BPM (Modelado)') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "").toUpperCase()=='WM-BPM_MODELADO') {
         qryValues+= '          OR Col30 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='WM-IS (Servicios)') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "").toUpperCase()=='WM-IS_SERVICIOS') {
         qryValues+= '          OR Col31 = TRUE \n';
       }
-      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "")=='WM-MWS (Conf)') {
+      if (filters[i].replace(/^\s+|\s+$|\s+(?=\s)/g, "").toUpperCase()=='WM-MWS_CONF') {
         qryValues+= '          OR Col32 = TRUE \n';
       }      
     }
